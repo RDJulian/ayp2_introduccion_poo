@@ -40,6 +40,7 @@ void Leon::mensajeAlDormir() {
     cout << "zzzzzzz" << endl;
 }
 
+
 void Leon::dormir() {
     this->mensajeAlDormir();
     estaDurmiendo = true;
