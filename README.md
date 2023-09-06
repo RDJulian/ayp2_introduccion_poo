@@ -1,4 +1,4 @@
-# AYP2: Introduccion a POO
+# AYP2: Introducción a POO
 
 Código de la clase. Cada ejemplo está separado en respectivas carpetas.
 
