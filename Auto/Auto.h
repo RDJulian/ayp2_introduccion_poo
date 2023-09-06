@@ -5,8 +5,6 @@
 
 class Auto {
 private:
-    Auto(std::string modelo, std::string color, int cantPuertas);
-
     std::string modelo;
     std::string color;
     int cantPuertas;
@@ -19,19 +17,15 @@ public:
          int cantPuertas,
          int kilometraje);
 
+    Auto(std::string modelo,
+         std::string color,
+         int cantPuertas);
+
     void encender();
 
     void apagar();
 
     void tocarBocina();
-
-    void imprimirInformacion();
-
-    void limpiar();
-
-    int getKilometraje();
-
-    void setKilometraje(int kilometraje);
 };
 
 #endif

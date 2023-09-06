@@ -22,8 +22,9 @@ Leon::Leon(std::string nombre, size_t peso, bool esHembra, bool esLider) {
 }
 
 void Leon::comer() {
-    if (!estaDurmiendo)
+    if (!estaDurmiendo) {
         cout << "Estoy comiendo un humano... Nom nom..." << endl;
+    }
 }
 
 void Leon::rugir() {
@@ -40,13 +41,12 @@ void Leon::mensajeAlDormir() {
     cout << "zzzzzzz" << endl;
 }
 
-
 void Leon::dormir() {
     this->mensajeAlDormir();
     estaDurmiendo = true;
 }
 
-void Leon::levantar() {
+void Leon::despertar() {
     cout << "*bostezo*" << endl;
     estaDurmiendo = false;
 }

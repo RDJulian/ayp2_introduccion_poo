@@ -1,16 +1,15 @@
 #ifndef APY2_INTRODUCCION_POO_PUNTO_H
 #define APY2_INTRODUCCION_POO_PUNTO_H
 
-
 class Punto {
 private:
-    int x, y;
+    float x, y;
 public:
     Punto();
 
-    Punto(int x, int y);
+    Punto(float x, float y);
 
-    // Otras cosas
+    float distancia(Punto punto2);
 };
 
 #endif

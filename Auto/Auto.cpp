@@ -1,5 +1,4 @@
 #include "Auto.h"
-#include "CarWash.h"
 #include <iostream>
 
 using namespace std;
@@ -32,22 +31,4 @@ void Auto::tocarBocina() {
     if (encendido) {
         cout << "BEEEEEEEEEEEPP" << endl;
     }
-}
-
-int Auto::getKilometraje() {
-    return kilometraje;
-}
-
-void Auto::setKilometraje(int kilometraje) {
-    this->kilometraje = kilometraje;
-}
-
-void Auto::limpiar() {
-    if (sucio) {
-        CarWash::limpiar(this);
-    }
-}
-
-void Auto::imprimirInformacion() {
-    cout << modelo << " " << color << " " << cantPuertas << " " << kilometraje << endl;
 }

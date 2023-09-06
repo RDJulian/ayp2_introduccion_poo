@@ -1,18 +1,18 @@
 #ifndef APY2_INTRODUCCION_POO_CIRCULO_H
 #define APY2_INTRODUCCION_POO_CIRCULO_H
 
-
 #include "Punto.h"
 
 class Circulo {
 private:
-    int radio;
+    float radio;
     Punto centro;
 public:
-    Circulo(int radio, Punto punto);
+    Circulo(float radio, Punto punto);
 
     float calcularArea();
-};
 
+    bool estaIncluido(Punto punto);
+};
 
 #endif

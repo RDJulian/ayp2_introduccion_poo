@@ -25,8 +25,7 @@ public:
 
     void dormir();
 
-    void levantar();
+    void despertar();
 };
-
 
 #endif

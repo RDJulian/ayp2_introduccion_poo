@@ -1,9 +1,7 @@
-#include "Molinete.h"
 #include <iostream>
-#include "Circulo.h"
+#include "Molinete.h"
 
 using namespace std;
-
 
 int main() {
     Molinete molinete1(true);
@@ -15,6 +13,7 @@ int main() {
     }
 
     for (int i = 0; i < 999; ++i) {
+        molinete2.habilitar();
         molinete2.pasar();
     }
 
@@ -26,11 +25,7 @@ int main() {
     cout << molinete2.getCantPersonas() << endl;
     cout << molinete3.getCantPersonas() << endl;
 
-
-    Punto puntito(3, 2);
-    Circulo circulito(5, puntito);
-    cout << circulito.calcularArea() << endl;
-
+    cout << Molinete::getCantTotalPersonas() << endl;
 
     return 0;
 }
