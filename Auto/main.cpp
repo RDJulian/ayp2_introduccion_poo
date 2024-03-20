@@ -1,13 +1,13 @@
-#include <iostream>
-#include "Auto.h"
+#include "Auto.hpp"
 
 int main() {
-    Auto autito("Ford Ka", "Fucsia", 5, 50000);
-
+    Auto autito("Ka", "Rojo", "Ford", 3, 150000);
     autito.encender();
-    autito.tocarBocina();
+    autito.tocar_bocina();
+    autito.acelerar();
+    autito.desacelerar();
+    autito.desacelerar();
     autito.apagar();
-    autito.tocarBocina();
-
+    autito.tocar_bocina();
     return 0;
 }

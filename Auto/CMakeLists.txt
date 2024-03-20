@@ -12,6 +12,6 @@ set(CMAKE_CXX_FLAGS "${CXXFLAGS}")
 add_executable(ayp2_introduccion_poo
         main.cpp
         Auto.cpp
-        Auto.h)
+        Auto.hpp)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "programa.exe")

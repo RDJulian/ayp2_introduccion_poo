@@ -12,6 +12,6 @@ set(CMAKE_CXX_FLAGS "${CXXFLAGS}")
 add_executable(ayp2_introduccion_poo
         main.cpp
         Leon.cpp
-        Leon.h)
+        Leon.hpp)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "programa.exe")

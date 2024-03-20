@@ -1,4 +1,4 @@
-#include "Punto.h"
+#include "Punto.hpp"
 
 Punto::Punto() {
     x = 0;
@@ -11,6 +11,6 @@ Punto::Punto(float x, float y) {
 }
 
 float Punto::distancia(Punto punto2) {
-    // IMPLEMENTAR //
+    // IMPLEMENTAR.
     return 0;
 }

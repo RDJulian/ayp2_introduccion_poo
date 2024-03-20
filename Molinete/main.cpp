@@ -1,7 +1,10 @@
 #include <iostream>
-#include "Molinete.h"
+#include "Molinete.hpp"
 
 using namespace std;
+
+/* Este ejemplo es quizá el más compilado. La idea es usar un atributo estático (pertenece a la clase)
+ * para llevar cuenta de cuantas personas pasaron por TODOS los molinetes, independientemente de cuantos tengamos. */
 
 int main() {
     Molinete molinete1(true);
@@ -21,11 +24,11 @@ int main() {
         molinete3.pasar();
     }
 
-    cout << molinete1.getCantPersonas() << endl;
-    cout << molinete2.getCantPersonas() << endl;
-    cout << molinete3.getCantPersonas() << endl;
+    cout << molinete1.obtener_cantidad_personas() << endl;
+    cout << molinete2.obtener_cantidad_personas() << endl;
+    cout << molinete3.obtener_cantidad_personas() << endl;
 
-    cout << Molinete::getCantTotalPersonas() << endl;
+    cout << Molinete::obtener_cantidad_total_personas() << endl;
 
     return 0;
 }

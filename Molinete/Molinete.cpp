@@ -1,15 +1,15 @@
-#include "Molinete.h"
+#include "Molinete.hpp"
 
-int Molinete::cantTotalPersonas = 0;
+int Molinete::cantidad_total_personas = 0;
 
 Molinete::Molinete() {
     habilitado = true;
-    cantPersonas = 0;
+    cantidad_personas = 0;
 }
 
 Molinete::Molinete(bool habilitado) {
     this->habilitado = habilitado;
-    cantPersonas = 0;
+    cantidad_personas = 0;
 }
 
 void Molinete::habilitar() {
@@ -18,15 +18,15 @@ void Molinete::habilitar() {
 
 void Molinete::pasar() {
     if (habilitado) {
-        cantPersonas++;
-        cantTotalPersonas++;
+        cantidad_personas++;
+        cantidad_total_personas++;
     }
 }
 
-int Molinete::getCantPersonas() {
-    return cantPersonas;
+int Molinete::obtener_cantidad_personas() {
+    return cantidad_personas;
 }
 
-int Molinete::getCantTotalPersonas() {
-    return cantTotalPersonas;
+int Molinete::obtener_cantidad_total_personas() {
+    return cantidad_total_personas;
 }
